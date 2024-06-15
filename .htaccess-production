@@ -1,0 +1,21 @@
+# NECESSÁRIO APENAS SE FOR FAZER DEPLOY NO PROJETO NA HOSTINGER. SENDO ESTE O CASO, É SÓ RENOMEAR ESTE ARQUIVO PARA .htaccess
+<IfModule mod_rewrite.c>
+Options +FollowSymLinks
+RewriteEngine On
+
+# Bloquear acesso ao arquivo .env
+<Files .env>
+    Order allow,deny
+    Deny from all
+</Files>
+
+RewriteCond %{REQUEST_URI} !^/public/
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ /public/$1 [L]
+
+# A regra abaixo pode estar causando um problema, considere revisá-la se necessário.
+#RewriteRule ^ index.php [L]
+
+RewriteRule ^(/)?$ public/index.php [L]
+</IfModule>

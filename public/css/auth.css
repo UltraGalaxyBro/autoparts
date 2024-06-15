@@ -1,0 +1,48 @@
+/*ESTILO PARA O PAGE LOADER ---- INÍCIO*/
+.spinner-wrapper {
+    background-color: #114C8D;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.4s;
+}
+/*ESTILO PARA O PAGE LOADER ---- FIM*/
+
+/*Estilos do Sweetalert 2*/
+.colored-toast.swal2-icon-success {
+    background-color: #023e13 !important;
+}
+
+.colored-toast.swal2-icon-error {
+    background-color: #bc0f0f !important;
+}
+
+.colored-toast.swal2-icon-warning {
+    background-color: #f67300 !important;
+}
+
+.colored-toast.swal2-icon-info {
+    background-color: #00bbfa !important;
+}
+
+.colored-toast.swal2-icon-question {
+    background-color: #87adbd !important;
+}
+
+.colored-toast .swal2-title {
+    color: white;
+}
+
+.colored-toast .swal2-close {
+    color: white;
+}
+
+.colored-toast .swal2-html-container {
+    color: white;
+}

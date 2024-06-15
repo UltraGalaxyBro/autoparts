@@ -1,0 +1,196 @@
+.navbar-co2 {
+  background: linear-gradient(to right, #0167cc, #00366f) !important;
+}
+
+#suggestions {
+  margin-left: 35px;
+  position: absolute;
+  z-index: 1500;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+/*ESTILO PARA O PAGE LOADER ---- INÍCIO*/
+.spinner-wrapper {
+  background-color: #114C8D;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s;
+}
+
+/*ESTILO PARA O PAGE LOADER ---- FIM*/
+
+/* BOTÃO WHATSAPP --- INÍCIO */
+.whatsapp-link {
+  z-index: 1500;
+  margin-bottom: 4em;
+}
+
+/* BOTÃO WHATSAPP --- FIM */
+
+/*CAROUSEL CLASSES INÍCIO*/
+.c-item {
+  height: 480px;
+}
+
+.c-img {
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.5);
+}
+
+.text-shadow-main {
+  text-shadow: 4px 4px 8px rgba(255, 0, 0, 0.3);
+
+}
+
+/*CAROUSEL CLASSES FIM*/
+
+/* CLASSES RESPONSÁVEIS PELOS CARDS DO PRODUTO --- INÍCIO */
+.card {
+  transition: box-shadow 0.5s ease, opacity 0.5s ease;
+  overflow: hidden;
+  /* Adiciona overflow: hidden para evitar que as bordas da imagem se sobreponham ao card */
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  opacity: 1;
+}
+
+.card:hover .position-absolute {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.position-absolute {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.card-img-top {
+  transition: transform 0.5s ease, filter 0.5s ease;
+  filter: grayscale(50%);
+}
+
+.card:hover .card-img-top {
+  transform: scale(1.1);
+  filter: grayscale(0%);
+}
+
+/* CLASSES RESPONSÁVEIS PELOS CARDS DO PRODUTO --- FIM */
+
+/*Estilos do Sweetalert 2 ---- INÍCIO*/
+.colored-toast.swal2-icon-success {
+  background-color: #023e13 !important;
+}
+
+.colored-toast.swal2-icon-error {
+  background-color: #bc0f0f !important;
+}
+
+.colored-toast.swal2-icon-warning {
+  background-color: #f67300 !important;
+}
+
+.colored-toast.swal2-icon-info {
+  background-color: #00bbfa !important;
+}
+
+.colored-toast.swal2-icon-question {
+  background-color: #87adbd !important;
+}
+
+.colored-toast .swal2-title {
+  color: white;
+}
+
+.colored-toast .swal2-close {
+  color: white;
+}
+
+.colored-toast .swal2-html-container {
+  color: white;
+}
+
+/*Estilos do Sweetalert 2 ---- INÍCIO*/
+
+/* DIVISOR INÍCIO*/
+.divider {
+  width: 100%;
+  height: 1.5rem;
+  background-color: rgba(0, 0, 0, .1);
+  border: solid rgba(0, 0, 0, .15);
+  border-width: 1px 0;
+  box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+  margin-top: 1em;
+}
+
+.divider-2 {
+  height: 3.1rem;
+  margin-top: 1em;
+}
+
+/* DIVISOR INÍCIO*/
+
+/* PÁGINA DE PRODUTOS INÍCIO*/
+#container-filters {
+  margin-top: 140px;
+}
+
+#container-products {
+  max-width: 1200px;
+  padding: 20px;
+  margin-top: 100px;
+}
+
+.scrollable {
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+@media screen and (max-width: 768px) {
+  #container-products {
+    margin-top: 0;
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    justify-items: center;
+  }
+}
+/* PÁGINA DE PRODUTOS INÍCIO*/
+
+/*PÁGINA DO CARRINHO INÍCIO*/
+@media (min-width: 1025px) {
+  .h-custom {
+    height: 100vh !important;
+  }
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/*PÁGINA DO CARRINHO FIM*/
